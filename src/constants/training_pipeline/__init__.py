@@ -11,3 +11,7 @@ BUCKET_NAME: str="churnpredictions"
 
 S3_DATA_FOLDER: str="data"
 
+## Data Transformation Constants
+
+
+

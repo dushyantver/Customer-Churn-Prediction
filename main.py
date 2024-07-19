@@ -7,7 +7,7 @@ from src.pipeline.training_pipeline import Train_pipeline
 def start_training():
     try:
         train_pipeline = Train_pipeline()
-        train_pipeline.start_data_ingestion()
+        train_pipeline.data_transformation()
 
     except Exception as e:
         raise Customer_Exception(e, sys)

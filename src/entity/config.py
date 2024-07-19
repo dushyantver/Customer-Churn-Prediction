@@ -12,3 +12,11 @@ class DataIngestionConfig:
         self.data_path:str = os.path.join(self.s3_data_folder, "Churn_Modelling.csv")
 
         self.data_import_path:str = os.path.join(self.data_path, "imported_data")
+
+
+## Data Preprocessing Configuration
+@dataclass
+class DataPreprocessingConfig:
+    def __init__(self):
+        self.data_path = "D:\\Data_analytics_new\\MLOPS\\Customer-Churn-Prediction\\artifacts\\Churn_Modelling.csv"
+        self.preprocessor_obj_file: str = os.path.join("artifacts", "preprocessor.pkl")

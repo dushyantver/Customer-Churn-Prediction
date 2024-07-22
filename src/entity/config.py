@@ -20,3 +20,9 @@ class DataPreprocessingConfig:
     def __init__(self):
         self.data_path = "D:\\Data_analytics_new\\MLOPS\\Customer-Churn-Prediction\\artifacts\\Churn_Modelling.csv"
         self.preprocessor_obj_file: str = os.path.join("artifacts", "preprocessor.pkl")
+
+## Model Training Configuration
+@dataclass
+class ModelTrainingConfig:
+    def __init__(self):
+        self.artifact_dir:str = os.path.join("artifacts", "model.h5")

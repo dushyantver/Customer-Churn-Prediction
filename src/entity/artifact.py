@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import numpy as np
 
 @dataclass
 class DataIngestionArtifacts:
@@ -6,6 +7,11 @@ class DataIngestionArtifacts:
 
 @dataclass
 class DataPreprocessingArtifacts:
-    train_file_path:str
-    test_file_path:str
+    train_data: np.ndarray
+    test_data: np.ndarray
+
+@dataclass
+class ModelTrainingArtifacts:
+    trained_model_file_path:str
+    
     
